@@ -13,8 +13,15 @@ body{
     --light: #a3a3a3;
     --lighter: #ffffff;
     --verde: #adff2f;
+}img{
+    max-width: 100%;
 }
-
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
 /*#region debug */
 .debug .top {
     background-color: aquamarine;
@@ -37,7 +44,12 @@ body{
 .sidebar {
     color: white;
 }
-
+.sidebar img{
+    padding: 0.6rem;
+}
+i{
+    color: white;
+}
 /*#endregion sidebar */
 /*#region banner_top */
 
@@ -66,20 +78,25 @@ footer.bottom {
 /*#region mediaquery */
 @media screen and (max-width:768px) {
     .top>.sidebar {
-        width: 50px;
+        width: 60px;
 
     }
 
     .top>.content {
-        width: calc(100% - 50px);
+        width: calc(100% - 60px);
     }
 
     .sidebar_text_top,
     .sidebar_text_bottom {
         display: none;
     }
+    .logo{
+        display: none;
+    }
 }
 
-@media screen and (max-width: 1160px) {}
+@media screen and (max-width: 1160px) {
+
+}
 
 /*#endregion mediaquery */
