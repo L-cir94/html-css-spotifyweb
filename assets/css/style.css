@@ -1,66 +1,85 @@
-*{
-margin: 0;
-padding:0 ;
-box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Circular Std', sans-serif;;
 }
 :root {
-  --black-darker: #000000;
-  --black-dark: #080b12;
-  --black-medium: #141922;
-  --light: #a3a3a3;
-  --lighter: #ffffff;
-  --verde: #adff2f;
+    --black-darker: #000000;
+    --black-dark: #080b12;
+    --black-medium: #141922;
+    --light: #a3a3a3;
+    --lighter: #ffffff;
+    --verde: #adff2f;
 }
+
 /*#region debug */
-.debug .top{
+.debug .top {
     background-color: aquamarine;
 }
-.debug footer{
+
+.debug footer {
     background-color: rgb(156, 123, 255);
 }
-.debug .sidebar{
+
+.debug .sidebar {
     background-color: rgb(0, 0, 0);
 }
-.debug .content{
+
+.debug .content {
     background-color: rgb(255, 215, 113);
 }
+
 /*#endregion debug */
-.top{
+/*#region sidebar */
+.sidebar {
+    color: white;
+}
+
+/*#endregion sidebar */
+/*#region banner_top */
+
+/*#endregion banner_top */
+/*#region main */
+.top {
     height: calc(100vh - 100px);
     display: flex;
 }
-.top > .sidebar{
-    width: 150px;
+
+.top>.sidebar {
+    width: 200px;
 
 }
-.top > .content{
-    width: calc(100% - 150px);
+
+.top>.content {
+    width: calc(100% - 200px);
 }
-footer.bottom{
-    height:100px; 
+
+
+/*#region footer */
+footer.bottom {
+    height: 100px;
 }
+/*#endregion footer */
 /*#region mediaquery */
-@media screen and (max-width: 480px) 
-{
-.top > .sidebar{
-    width: 30px;
+@media screen and (max-width:768px) {
+    .top>.sidebar {
+        width: 50px;
 
-}
-.top > .content{
-    width: calc(100% - 30px);
-}
-}
-@media screen and (min-width: 768px) 
-{
-.top > .sidebar{
-    width: 280px;
+    }
 
-}
-.top > .content{
-    width: calc(100% - 280px);
-}
-}
-@media screen and (min-width: 1160px) {
+    .top>.content {
+        width: calc(100% - 50px);
+    }
 
+    .sidebar_text_top,
+    .sidebar_text_bottom {
+        display: none;
+    }
 }
+
+@media screen and (max-width: 1160px) {}
+
 /*#endregion mediaquery */
