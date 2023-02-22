@@ -30,15 +30,31 @@ box-sizing: border-box;
     display: flex;
 }
 .top > .sidebar{
-    width: 70px;
+    width: 150px;
 
 }
 .top > .content{
-    width: calc(100% - 70px);
+    width: calc(100% - 150px);
 }
 footer.bottom{
     height:100px; 
 }
 /*#region mediaquery */
+@media screen and (min-width: 480px) 
+{
 
+}
+@media screen and (min-width: 768px) 
+{
+.top > .sidebar{
+    width: 280px;
+
+}
+.top > .content{
+    width: calc(100% - 280px);
+}
+}
+@media screen and (min-width: 1160px) {
+
+}
 /*#endregion mediaquery */
