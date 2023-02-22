@@ -1,0 +1,19 @@
+*{
+margin: 0;
+padding:0 ;
+box-sizing: border-box;
+}
+/*#region debug */
+.debug .top{
+    background-color: aquamarine;
+}
+.debug footer{
+    background-color: rgb(156, 123, 255);
+}
+/*#endregion debug */
+.top{
+    height: calc(100vh - 100px);
+}
+footer.bottom{
+    height:100px; 
+}
