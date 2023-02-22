@@ -22,6 +22,9 @@ body{
 .column{
     flex-direction: column;
 }
+.space_between{
+    justify-content: space-between;
+}
 /*#region debug */
 .debug .top {
     background-color: aquamarine;
@@ -47,8 +50,9 @@ body{
 .sidebar img{
     padding: 0.6rem;
 }
-i{
-    color: white;
+.img_profile img{
+ width: 50px;
+ padding: 1rem;
 }
 /*#endregion sidebar */
 /*#region banner_top */
