@@ -40,9 +40,15 @@ footer.bottom{
     height:100px; 
 }
 /*#region mediaquery */
-@media screen and (min-width: 480px) 
+@media screen and (max-width: 480px) 
 {
+.top > .sidebar{
+    width: 30px;
 
+}
+.top > .content{
+    width: calc(100% - 30px);
+}
 }
 @media screen and (min-width: 768px) 
 {
